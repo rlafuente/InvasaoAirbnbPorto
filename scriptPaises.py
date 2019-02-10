@@ -8,9 +8,13 @@ import urllib.request
 df = pd.read_csv("reviews.csv")
 df['location'] = ''
 
-df1 = df.iloc[:,:5000]
-df2 = df.iloc[:,5000:]
+df1 = df.iloc[:5000, :]
+df2 = df.iloc[5000:,:]
 iterat = 0
+
+
+
+
 
 for id, row in df.iterrows():
     
@@ -32,9 +36,11 @@ for id, row in df.iterrows():
         
         
     olditerat = iterat
-    iterat = id // 5000    
+    iterat = id // 4999    
     if (iterat > olditerat):
         df1.to_csv("output" + str(iterat) + ".csv")
-        df1 = df2.iloc[:, :5000]
-        df2 = df2.iloc[:, 5000:]    
+        print("output" + str(iterat) + "!!")
+        df1 = df2.iloc[:5000,:]
+        df2 = df2.iloc[5000:,:]    
+           
         
