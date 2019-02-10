@@ -32,7 +32,7 @@ for id, row in df.iterrows():
         
         
     olditerat = iterat
-    iterat = id // 10    
+    iterat = id // 5000    
     if (iterat > olditerat):
         df1.to_csv("output" + str(iterat) + ".csv")
         df1 = df2.iloc[:, :5000]
