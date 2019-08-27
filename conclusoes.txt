@@ -1,0 +1,5 @@
+Total = 5115
+
+Isentos ou não apresentam = 530
+
+Morada fora do Porto = 77
