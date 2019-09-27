@@ -47,15 +47,11 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ['Santa Catarina', 'Alegria', 'Almada', 'Av. Boavista', 'Santo Ildefonso','Cedofeita','Bonjardim','Formosa','Visconde de Setúbal'],
         datasets: [{
-            label: 'Número de Alojamentos',
+            label: 'Número de Anúncios',
             data: [179,130,126,116,105,101,98,97,94],
             backgroundColor: 
-                'rgba(255, 99, 132, 0.2)'
-            ,
-            borderColor: 
-                'rgba(255, 99, 132, 1)'
-            ,
-            borderWidth: 1
+                'rgba(255, 90, 95, 1)'
+            
         }]
     },
     options: {
@@ -74,6 +70,32 @@ var myChart = new Chart(ctx, {
 
 	<p>A Airbnb apresenta-se como uma plataforma facilitadora da economia de partilha, que ajuda pessoas comuns a arrendar um quartinho vazio e com isso ganhar algum dinheiro extra.
 Na verdade, a escala do negócio é outra. A economia de partilha existe, mas o peso de anúncios referentes a alojamentos ou quartos partilhados é muitíssimo reduzida - pouco mais de 10%. A esmagadora maioria dos anúncios referem-se a apartamentos completos, casas que ficam vazias assim que os turistas as deixam. Geralmente, também não são pequenos proprietários que colocam os alojamentos na Airbnb. Cerca de 70% dos anúncios são colocados por utilizadores com mais de um anúncio. </p>
+
+	<canvas id="myChart2" width="400" height="100"></canvas>
+
+
+	<script>
+var ctx = document.getElementById('myChart2').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Apartamentos Completos', 'Quartos Privativos', 'Quartos Partilhados'],
+        datasets: [{
+            label: 'Número de Alojamentos',
+            data: [4002,494,14],
+            backgroundColor: [
+                'rgba(255, 90, 95, 1)',
+                'rgba(0,166,153,1)',
+                'rgba(252,100,45,1)'
+                ]
+            
+        }]
+    },
+    options: {
+
+    }
+});
+</script>
 
 	<div style="text-align: center;"><img style="max-height:100%; max-width:100%" src="https://i.imgur.com/VdpqdAt.png">
 		<span>Marketing presente na página da Airbnb</span></div>
