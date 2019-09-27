@@ -1,10 +1,91 @@
 body{
-  font-family: "Lato";
-  text-align: center;
+  font-family: "Lora";
   padding: 0 20px;
+  font-size: 20px;
 }
 
+header{
+	font-family: "Lato";
+text-align: center;}
+
 div {
-    max-width: 60rem;
+  margin: 40px auto;
+}
+
+.corpo>p{
+	margin-bottom: 5px;
+}
+
+p {
+    max-width: 50rem;
     margin: 40px auto;
+    line-height: 1.5;
+    
+}
+
+.corpo{
+	    max-width: 60rem;
+    
+}
+
+span{
+	color:grey;
+	font-size: 15px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+strong{
+	font-size: 2.2em;
+	color:#ff5a5f;
+}
+
+em{
+	color: black;
+}
+
+.card p{
+	margin-top: 0;
+	color:#00a699;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 auto;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Clear floats after the columns */
+
+
+/* Style the counter cards */
+.card {
+	background-color: grey;
+  color: grey; /* this adds the "card" effect */
+  padding: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 5px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
