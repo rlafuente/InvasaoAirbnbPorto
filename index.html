@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Georgia" rel="stylesheet">
 	  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
 
 </head>
 <body>
@@ -26,7 +27,7 @@
     <div class="card">
     	                <strong>5115</strong>
                 <p>Anuncios Airbnb no concelho do Porto</p>
-                <small> <em>90%</em> 	dos anúncios de AL <em>online</em></small>
+                <small> <em>90%</em> 	dos anúncios de AL online</small>
     </div>
  	 </div>
   	<div class="column">
@@ -36,16 +37,54 @@
   	</div>
 	</div>
 
-	<div style="text-align: center;"><img style="max-height:100%; max-width:100%" src="https://i.imgur.com/VdpqdAt.png">
-		<span>Marketing presente na página da Airbnb</span></div>
+	<canvas id="myChart" width="400" height="100"></canvas>
+
+
+	<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: ['Santa Catarina', 'Alegria', 'Almada', 'Av. Boavista', 'Santo Ildefonso','Cedofeita','Bonjardim','Formosa','Visconde de Setúbal'],
+        datasets: [{
+            label: 'Número de Alojamentos',
+            data: [179,130,126,116,105,101,98,97,94],
+            backgroundColor: 
+                'rgba(255, 99, 132, 0.2)'
+            ,
+            borderColor: 
+                'rgba(255, 99, 132, 1)'
+            ,
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+
 
 	<p>A Airbnb apresenta-se como uma plataforma facilitadora da economia de partilha, que ajuda pessoas comuns a arrendar um quartinho vazio e com isso ganhar algum dinheiro extra.
 Na verdade, a escala do negócio é outra. A economia de partilha existe, mas o peso de anúncios referentes a alojamentos ou quartos partilhados é muitíssimo reduzida - pouco mais de 10%. A esmagadora maioria dos anúncios referem-se a apartamentos completos, casas que ficam vazias assim que os turistas as deixam. Geralmente, também não são pequenos proprietários que colocam os alojamentos na Airbnb. Cerca de 70% dos anúncios são colocados por utilizadores com mais de um anúncio. </p>
+
+	<div style="text-align: center;"><img style="max-height:100%; max-width:100%" src="https://i.imgur.com/VdpqdAt.png">
+		<span>Marketing presente na página da Airbnb</span></div>
 
 	<div div style="text-align: center">
 		<iframe width="100%" height="520" frameborder="0" src="https://whiskas123.carto.com/builder/b746c59c-ea7b-4e11-a662-729a6b92d4a0/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 		<span> Azul - Anúncios cujos proprietários têm mais de 1 anúncio; Magenta - Anúncios singulares	</span>
 	</div>
+
+
+
 
 	<p>Segundo a legislação em vigor, os alojamentos locais têm de estar registados no Registo Nacional de Alojamento Local (RNAL). Cada AL tem um número de registo que deve ser indicado na página do anúncio na Airbnb. No entanto, há 607 anúncios - 12% - em situação irregular: ora porque não apresentam esse número, porque dizem estar isentos, porque apresentam um número que não se encontra no RNAL ou ainda porque apresentam um número que aponta para um registo de um AL fora do Porto.
 Outra informação importante presente no registo é a data de abertura do Alojamento Local. No entanto, há 650 ALs presentes na Airbnb que não apresentam esse dado, e mais relevante ainda, existem 1350 anúncios que à partida terão começado a operar antes da data de abertura que apresentam no registo, uma vez que tiveram alguma review antes dessa data.</p>
