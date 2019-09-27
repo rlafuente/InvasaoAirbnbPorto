@@ -68,7 +68,7 @@ var myChart = new Chart(ctx, {
 
 
 
-	<p>A Airbnb apresenta-se como uma plataforma facilitadora da economia de partilha, que ajuda pessoas comuns a arrendar um quartinho vazio e com isso ganhar algum dinheiro extra.
+	<p>A Airbnb apresenta-se como uma plataforma facilitadora da economia de partilha, que ajuda pessoas comuns - chamados anfitriões - a arrendar um quartinho vazio e com isso ganhar algum dinheiro extra.
 Na verdade, a escala do negócio é outra. A economia de partilha existe, mas o peso de anúncios referentes a alojamentos ou quartos partilhados é muitíssimo reduzida - pouco mais de 10%. A esmagadora maioria dos anúncios referem-se a apartamentos completos, casas que ficam vazias assim que os turistas as deixam. Geralmente, também não são pequenos proprietários que colocam os alojamentos na Airbnb. Cerca de 70% dos anúncios são colocados por utilizadores com mais de um anúncio. </p>
 
 	<canvas id="myChart2" width="400" height="100"></canvas>
@@ -93,6 +93,37 @@ var myChart = new Chart(ctx, {
     },
     options: {
 
+    }
+});
+</script>
+
+	<p> Existem ainda utilizadores com números anormalmente altos de anúncios publicados. Alguns dos nomes desses utilizadores sugerem que a plataforma possa estar a ser utilizada como ferramenta de negócio por empresas para anunciar alojamentos, algo que vai contra aquilo que a própria plataforma sugere na sua página.</p>
+
+		<canvas id="myChart3" width="400" height="100"></canvas>
+
+
+	<script>
+var ctx = document.getElementById('myChart3').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: ['Feels Like Home', 'Liiiving', 'Oporto City Flats', 'Host Wise', 'Porto City Hosts','Oporto Rental Management','Home Me','Rui','Marta','Carolina'],
+        datasets: [{
+            label: 'Número de Anúncios',
+            data: [53,49,45,42,39,35,28,28,27,26],
+            backgroundColor: 
+                'rgba(255, 90, 95, 1)'
+            
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
     }
 });
 </script>
