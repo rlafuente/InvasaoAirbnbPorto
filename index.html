@@ -85,7 +85,7 @@
 
         <p>A Airbnb apresenta-se como uma plataforma facilitadora da economia
         de partilha, que ajuda pessoas comuns - chamados anfitriões - a
-        arrendar um quartinho vazio e com isso ganhar algum dinheiro extra.</p>
+        arrendar um quartinho vazio e, com isso, ganhar algum dinheiro extra.</p>
 
 	<div style="text-align: center;">
           <img src="https://i.imgur.com/VdpqdAt.png" style="max-height:100%; max-width:100%">
@@ -95,12 +95,6 @@
         <p>Na verdade, a escala do negócio é outra. A economia de partilha existe,
         mas o peso de anúncios referentes a alojamentos ou quartos partilhados
         é muitíssimo reduzida - pouco mais de 10%. </p>
-
-        <p>A esmagadora maioria dos anúncios referem-se a apartamentos
-        completos, casas que ficam vazias assim que os turistas as deixam.
-        Geralmente, também não são pequenos proprietários que colocam os
-        alojamentos na Airbnb. Cerca de 70% dos anúncios são colocados por
-        utilizadores com mais de um anúncio. </p>
 
 	<canvas id="myChart2" width="400" height="100"></canvas>
 	<script>
@@ -126,12 +120,26 @@
           });
         </script>
 
-        <p>Existem ainda utilizadores com números anormalmente altos de
-        anúncios publicados. Alguns dos nomes desses utilizadores sugerem que a
-        plataforma possa estar a ser utilizada como ferramenta de negócio por
-        empresas para anunciar alojamentos, algo que vai contra aquilo que a
-        própria plataforma sugere na sua página.</p>
+        <p>A esmagadora maioria dos anúncios referem-se a apartamentos
+        completos, casas que ficam vazias assim que os turistas as deixam.</p>
 
+        <h2>Objetivo: "Volume de faturação"</h2>
+
+        <p>Segundo os números, proprietários individuais com um anúncio único
+        são uma minoria. Cerca de 70% dos anúncios são colocados por
+        utilizadores com mais de um anúncio.</p>
+
+	<div div style="text-align: center">
+		<iframe src="https://whiskas123.carto.com/builder/b746c59c-ea7b-4e11-a662-729a6b92d4a0/embed"
+                  width="100%" height="520" frameborder="0" 
+                  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<span>Azul - Anúncios cujos proprietários têm mais de um anúncio; Magenta - Anúncios singulares</span>
+	</div>
+
+        <p>Existem ainda utilizadores com números particularmente altos de
+        anúncios publicados. Ao averiguar os nomes desses utilizadores, podemos
+        constatar que a maioria são empresas de gestão de AL:</p>
+        
         <canvas id="myChart3" width="400" height="100"></canvas>
         <script>
           var ctx = document.getElementById('myChart3').getContext('2d');
@@ -146,7 +154,6 @@
                 data: [53,49,45,42,39,35,28,28,27,26],
                 backgroundColor: 
                 'rgba(0, 166, 153, 1)'
-
               }]
             },
             options: {
@@ -161,12 +168,54 @@
           });
         </script>
 
-	<div div style="text-align: center">
-		<iframe src="https://whiskas123.carto.com/builder/b746c59c-ea7b-4e11-a662-729a6b92d4a0/embed"
-                  width="100%" height="520" frameborder="0" 
-                  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-		<span>Azul - Anúncios cujos proprietários têm mais de um anúncio; Magenta - Anúncios singulares</span>
-	</div>
+        <p>O sucesso deste tipo de mediação dá-nos um bom indício da dimensão
+        do fenómeno: não estamos a falar apenas de um nicho "premium" dentro
+        de uma variedade de ofertas, pois estas empresas claramente dominam as
+        contagens.
+        
+        Consultar a lista de serviços de uma destas empresas dá-nos uma boa
+        pista sobre o tipo de proprietário que a elas recorre:</p>
+
+        <blockquote>
+          <pre>
+	  Proprietários:
+	  - Estudo de rentabilidade estimada do seu imóvel;
+          - Gestão do seu imóvel 365 dias por ano (check-in, check-out, gestão
+            de reservas e optimização de preços, limpeza, apoio aos hóspedes,
+            etc.);
+          - Comunicação forte e criativa. Criação de conteúdo fotográfico e
+            videográfico para posterior divulgação nos vários canais de
+            comunicação (redes sociais, website e plataformas digitais).
+	  Objectivo: Aumentar a sua taxa de ocupação e consequente volume de facturação.
+
+	  Hóspedes:
+	  - Recepção de boas-vindas à sua estadia;
+	  - Limpeza;
+          - Apoio durante toda a estadia (compras no supermercado, sugestão de
+            restaurantes, programas especiais, actividades a realizar, etc.);
+	  - Serviço de guia e transfers exclusivos;
+	  Objectivo: Proporcionar uma estadia especial e inesquecível a todos os que visitam os nossos imóveis.
+          </pre>
+          <em>Fonte: Página de Serviços do site da <a href="https://www.liiiving.pt/pt/Servicos">Liiiving</a>.</em>
+        </blockquote>
+
+        <p>Estas empresas propõem toda uma estrutura de serviços que promove e
+        estabelece o modelo de hotel-fantasma: uma propriedade que funciona
+        como hotel, com serviços de gestão profissionais, acordos com cafés
+        próximos para providenciar o pequeno-almoço, transfers de e para o
+        aeroporto, visitas guiadas, publicidade profissional nas redes
+        sociais...</p>
+
+        <p>Com isto, percebemos que a dimensão do negócio vai bem para além da
+        pessoa que aluga um quarto por uns trocos, ou o casal que vai de férias
+        e coloca a sua casa no Airbnb por umas semanas. É para quem procura
+        "volume de facturação".</p>
+        
+        <p>É toda uma nova camada de negócio bem longe do modelo "sem
+        intermediários" que a Airbnb apregoa, e um destino questionável para as
+        propriedades no centro histórico, que se tornam hotéis em tudo menos no
+        nome.</p>
+
 
         <h2>As discrepâncias do RNAL</h2>
 
