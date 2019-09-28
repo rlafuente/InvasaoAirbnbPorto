@@ -6,9 +6,8 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Georgia" rel="stylesheet">
-	  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
-
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
 </head>
 <body>
 	<header>
@@ -16,132 +15,173 @@
 	</header>
 	<div class="corpo">
 	<div style="text-align: center">
-		<iframe width="100%" height="520" frameborder="0" src="https://whiskas123.carto.com/builder/9651d97d-a9f4-446c-854d-8e40f3b43fe8/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<iframe src="https://whiskas123.carto.com/builder/9651d97d-a9f4-446c-854d-8e40f3b43fe8/embed" 
+                  width="100%" height="520" frameborder="0" 
+                  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 		<span>Novos alojamentos por data de início de funcionamento</span>
 	</div>
 
-	<p>A plataforma de alojamento local Airbnb chegou ao Porto em 2009 e desde essa altura não parou de crescer. É de longe a plataforma mais popular do seu género, uma vez que 90% dos AL anunciados pela internet nesta cidade estão nesta plataforma. Em Junho de 2019 contavam-se 5115 alojamentos ativos - ou seja, que receberam gente no ano de 2019 - no concelho do Porto, estando 3181 - 62% - localizados no centro histórico da cidade. As rua com mais alojamentos é a de Santa Catarina, com 179, seguindo-se a Rua da Alegria e a Rua do Almada com cerca de 130 cada. </p>
+        <p>A plataforma de alojamento local Airbnb chegou ao Porto em 2009 e
+        desde essa altura não parou de crescer.</p>
+
+        <p>É de longe a plataforma mais popular do seu género, uma vez que 90%
+        dos AL anunciados pela internet nesta cidade estão nesta plataforma. Em
+        Junho de 2019 contavam-se 5115 alojamentos ativos - ou seja, que
+        receberam gente no ano de 2019 - no concelho do Porto, estando 3181 -
+        62% - localizados no centro histórico da cidade. As rua com mais
+        alojamentos é a de Santa Catarina, com 179, seguindo-se a Rua da
+        Alegria e a Rua do Almada com cerca de 130 cada. </p>
 
 	<div class="row">
-  	<div class="column">
-    <div class="card">
-    	                <strong>5115</strong>
-                <p>Anuncios Airbnb no concelho do Porto</p>
-                <small> <em>90%</em> 	dos anúncios de AL online</small>
-    </div>
- 	 </div>
-  	<div class="column">
-    <div class="card">    	                <strong>3181</strong>
-                <p>Anuncios Airbnb no centro histórico</p>
-                <small> <em>62%</em> dos  anúncios no Porto</small></div>
-  	</div>
-	</div>
+          <div class="column">
+            <div class="card">
+              <strong>5115</strong>
+              <p>Anuncios Airbnb no concelho do Porto</p>
+              <small> <em>90%</em> dos anúncios de AL online</small>
+            </div>
+          </div>
+  	  <div class="column">
+            <div class="card"><strong>3181</strong>
+              <p>Anuncios Airbnb no centro histórico</p>
+              <small> <em>62%</em> dos anúncios no Porto</small></div>
+            </div>
+          </div>
 
 	<canvas id="myChart" width="400" height="100"></canvas>
 
 
 	<script>
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'horizontalBar',
-    data: {
-        labels: ['Rua de Santa Catarina', 'Rua da Alegria', 'Rua do Almada', 'Av. da  Boavista', 'Rua de Santo Ildefonso','Rua de Cedofeita','Rua do Bonjardim','Rua Formosa','Rua do Visconde de Setúbal'],
-        datasets: [{
-            label: 'Número de Anúncios',
-            data: [179,130,126,116,105,101,98,97,94],
-            backgroundColor: 
-                'rgba(255, 90, 95, 1)'
-            
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-</script>
+          var ctx = document.getElementById('myChart').getContext('2d');
+          var myChart = new Chart(ctx, {
+              type: 'horizontalBar',
+              data: {
+                  labels: ['Rua de Santa Catarina', 'Rua da Alegria', 'Rua do Almada', 
+                           'Av. da  Boavista', 'Rua de Santo Ildefonso','Rua de Cedofeita',
+                           'Rua do Bonjardim','Rua Formosa','Rua do Visconde de Setúbal'],
+                  datasets: [{
+                      label: 'Número de Anúncios',
+                      data: [179,130,126,116,105,101,98,97,94],
+                      backgroundColor: 
+                          'rgba(255, 90, 95, 1)'
+                      
+                  }]
+              },
+              options: {
+                  scales: {
+                      yAxes: [{
+                          ticks: {
+                              beginAtZero: true
+                          }
+                      }]
+                  }
+              }
+          });
+        </script>
 
+        <p>A Airbnb apresenta-se como uma plataforma facilitadora da economia
+        de partilha, que ajuda pessoas comuns - chamados anfitriões - a
+        arrendar um quartinho vazio e com isso ganhar algum dinheiro extra.</p>
 
+        <p>Na verdade, a escala do negócio é outra. A economia de partilha existe,
+        mas o peso de anúncios referentes a alojamentos ou quartos partilhados
+        é muitíssimo reduzida - pouco mais de 10%. </p>
 
-	<p>A Airbnb apresenta-se como uma plataforma facilitadora da economia de partilha, que ajuda pessoas comuns - chamados anfitriões - a arrendar um quartinho vazio e com isso ganhar algum dinheiro extra.
-Na verdade, a escala do negócio é outra. A economia de partilha existe, mas o peso de anúncios referentes a alojamentos ou quartos partilhados é muitíssimo reduzida - pouco mais de 10%. A esmagadora maioria dos anúncios referem-se a apartamentos completos, casas que ficam vazias assim que os turistas as deixam. Geralmente, também não são pequenos proprietários que colocam os alojamentos na Airbnb. Cerca de 70% dos anúncios são colocados por utilizadores com mais de um anúncio. </p>
+        <p>A esmagadora maioria dos anúncios referem-se a apartamentos
+        completos, casas que ficam vazias assim que os turistas as deixam.
+        Geralmente, também não são pequenos proprietários que colocam os
+        alojamentos na Airbnb. Cerca de 70% dos anúncios são colocados por
+        utilizadores com mais de um anúncio. </p>
 
 	<canvas id="myChart2" width="400" height="100"></canvas>
-
-
 	<script>
-var ctx = document.getElementById('myChart2').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-        labels: ['Apartamentos Completos', 'Quartos Privativos', 'Quartos Partilhados'],
-        datasets: [{
-            label: 'Número de Alojamentos',
-            data: [4002,494,14],
-            backgroundColor: [
-                'rgba(255, 90, 95, 1)',
-                'rgba(0,166,153,1)',
-                'rgba(252,100,45,1)'
+          var ctx = document.getElementById('myChart2').getContext('2d');
+          var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+              labels: ['Apartamentos Completos', 'Quartos Privativos', 'Quartos Partilhados'],
+              datasets: [{
+                label: 'Número de Alojamentos',
+                data: [4002,494,14],
+                backgroundColor: [
+                  'rgba(255, 90, 95, 1)',
+                  'rgba(0,166,153,1)',
+                  'rgba(252,100,45,1)'
                 ]
-            
-        }]
-    },
-    options: {
 
-    }
-});
-</script>
+              }]
+            },
+            options: {
 
-	<p> Existem ainda utilizadores com números anormalmente altos de anúncios publicados. Alguns dos nomes desses utilizadores sugerem que a plataforma possa estar a ser utilizada como ferramenta de negócio por empresas para anunciar alojamentos, algo que vai contra aquilo que a própria plataforma sugere na sua página.</p>
+            }
+          });
+        </script>
 
-		<canvas id="myChart3" width="400" height="100"></canvas>
+        <p>Existem ainda utilizadores com números anormalmente altos de
+        anúncios publicados. Alguns dos nomes desses utilizadores sugerem que a
+        plataforma possa estar a ser utilizada como ferramenta de negócio por
+        empresas para anunciar alojamentos, algo que vai contra aquilo que a
+        própria plataforma sugere na sua página.</p>
+
+        <canvas id="myChart3" width="400" height="100"></canvas>
 
 
-	<script>
-var ctx = document.getElementById('myChart3').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'horizontalBar',
-    data: {
-        labels: ['Feels Like Home', 'Liiiving', 'Oporto City Flats', 'Host Wise', 'Porto City Hosts','Oporto Rental Management','Home Me','Rui','Marta','Carolina'],
-        datasets: [{
-            label: 'Número de Anúncios',
-            data: [53,49,45,42,39,35,28,28,27,26],
-            backgroundColor: 
+        <script>
+          var ctx = document.getElementById('myChart3').getContext('2d');
+          var myChart = new Chart(ctx, {
+            type: 'horizontalBar',
+            data: {
+              labels: ['Feels Like Home', 'Liiiving', 'Oporto City Flats', 
+                       'Host Wise', 'Porto City Hosts','Oporto Rental Management',
+                       'Home Me','Rui','Marta','Carolina'],
+              datasets: [{
+                label: 'Número de Anúncios',
+                data: [53,49,45,42,39,35,28,28,27,26],
+                backgroundColor: 
                 'rgba(0, 166, 153, 1)'
-            
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
+
+              }]
+            },
+            options: {
+              scales: {
+                yAxes: [{
+                  ticks: {
                     beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-</script>
+                  }
+                }]
+              }
+            }
+          });
+        </script>
 
 	<div style="text-align: center;"><img style="max-height:100%; max-width:100%" src="https://i.imgur.com/VdpqdAt.png">
-		<span>Marketing presente na página da Airbnb</span></div>
+		<span>Marketing presente na página da Airbnb</span>
+        </div>
 
 	<div div style="text-align: center">
-		<iframe width="100%" height="520" frameborder="0" src="https://whiskas123.carto.com/builder/b746c59c-ea7b-4e11-a662-729a6b92d4a0/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-		<span> Azul - Anúncios cujos proprietários têm mais de um anúncio; Magenta - Anúncios singulares	</span>
+		<iframe width="100%" height="520" frameborder="0" src="https://whiskas123.carto.com/builder/b746c59c-ea7b-4e11-a662-729a6b92d4a0/embed" 
+                  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<span>Azul - Anúncios cujos proprietários têm mais de um anúncio; Magenta - Anúncios singulares</span>
 	</div>
 
+        <p>Segundo a legislação em vigor, os alojamentos locais têm de estar
+        registados no Registo Nacional de Alojamento Local (RNAL). Cada AL tem
+        um número de registo que deve ser indicado na página do anúncio na
+        Airbnb.</p>
 
+        <p>No entanto, há 607 anúncios - 12% - em situação irregular: ora
+        porque não apresentam esse número, porque dizem estar isentos, porque
+        apresentam um número que não se encontra no RNAL ou ainda porque
+        apresentam um número que aponta para um registo de um AL fora do
+        Porto.</p>
 
+        <p>Outra informação importante presente no registo é a data de abertura
+        do Alojamento Local. No entanto, há 650 ALs presentes na Airbnb que não
+        apresentam esse dado, e mais relevante ainda, existem 1350 anúncios que
+        à partida terão começado a operar antes da data de abertura que
+        apresentam no registo, uma vez que receberam alguma avaliação antes
+        dessa data.</p>
 
-	<p>Segundo a legislação em vigor, os alojamentos locais têm de estar registados no Registo Nacional de Alojamento Local (RNAL). Cada AL tem um número de registo que deve ser indicado na página do anúncio na Airbnb. No entanto, há 607 anúncios - 12% - em situação irregular: ora porque não apresentam esse número, porque dizem estar isentos, porque apresentam um número que não se encontra no RNAL ou ainda porque apresentam um número que aponta para um registo de um AL fora do Porto.
-Outra informação importante presente no registo é a data de abertura do Alojamento Local. No entanto, há 650 ALs presentes na Airbnb que não apresentam esse dado, e mais relevante ainda, existem 1350 anúncios que à partida terão começado a operar antes da data de abertura que apresentam no registo, uma vez que receberam alguma avaliação antes dessa data.</p>
-	</div>
+    </div>
 
 </body>
 </html>
